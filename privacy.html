@@ -18,12 +18,13 @@
   <p class="sub">Upload Console · 시행일 2026-10-16</p>
 
   <h2>1. 개요</h2>
-  <p>Upload Console(이하 "이 앱")은 운영자 본인의 콘텐츠를 운영자 본인의 YouTube 채널과 Instagram 계정에 업로드하기 위한 개인용 도구입니다. 운영자 외의 사용자는 이 앱을 사용하지 않습니다.</p>
+  <p>Upload Console(이하 "이 앱")은 운영자 본인의 콘텐츠를 운영자 본인의 YouTube 채널, Instagram 계정, TikTok 계정에 업로드하기 위한 개인용 도구입니다. 운영자 외의 사용자는 이 앱을 사용하지 않습니다.</p>
 
   <h2>2. 접근하는 정보</h2>
   <ul>
     <li><b>YouTube(Google 계정)</b>: 영상 업로드 권한(<code>youtube.upload</code>)과, 연결된 채널 이름을 표시하기 위한 읽기 권한(<code>youtube.readonly</code>)을 사용합니다. 이를 위해 Google이 발급한 OAuth 토큰을 저장합니다.</li>
     <li><b>Instagram</b>: 게시물 발행을 위한 액세스 토큰과 계정 사용자 이름을 저장합니다.</li>
+    <li><b>TikTok</b>: 연결된 계정 이름을 표시하기 위한 기본 정보 권한(<code>user.info.basic</code>)과, 영상을 TikTok 앱의 초안으로 보내는 권한(<code>video.upload</code>)을 사용합니다. 이를 위해 TikTok이 발급한 OAuth 토큰을 저장합니다. 게시 여부와 공개 범위는 운영자가 TikTok 앱에서 직접 정합니다.</li>
   </ul>
 
   <h2>3. 이용 목적</h2>
@@ -33,10 +34,10 @@
   <p>토큰과 업로드 기록은 운영자의 개인 서버 데이터베이스에만 저장되며, 로그인한 운영자만 접근할 수 있습니다.</p>
 
   <h2>5. 제3자 제공</h2>
-  <p>어떠한 정보도 제3자에게 판매하거나 제공하지 않습니다. 업로드 요청에 필요한 범위에서 YouTube(Google)와 Instagram(Meta)의 공식 API에만 전송됩니다.</p>
+  <p>어떠한 정보도 제3자에게 판매하거나 제공하지 않습니다. 업로드 요청에 필요한 범위에서 YouTube(Google), Instagram(Meta), TikTok의 공식 API에만 전송됩니다.</p>
 
   <h2>6. 삭제</h2>
-  <p>관리 화면에서 [연결 해제]를 누르면 저장된 토큰이 즉시 삭제됩니다. Google 계정의 접근 권한은 <a href="https://myaccount.google.com/permissions">Google 계정 권한 설정</a>에서 언제든지 철회할 수 있습니다.</p>
+  <p>관리 화면에서 [연결 해제]를 누르면 저장된 토큰이 즉시 삭제됩니다. Google 계정의 접근 권한은 <a href="https://myaccount.google.com/permissions">Google 계정 권한 설정</a>에서, TikTok의 접근 권한은 TikTok 앱의 설정 → 보안 → 앱 및 서비스 관리에서 언제든지 철회할 수 있습니다.</p>
 
   <h2>7. Google API 서비스 사용자 데이터 정책</h2>
   <p>이 앱이 Google API로부터 받은 정보의 사용 및 다른 앱으로의 전송은 제한적 사용(Limited Use) 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 준수합니다.</p>
@@ -50,12 +51,13 @@
   <p class="sub">Upload Console · Effective October 16, 2026</p>
 
   <h2>1. Overview</h2>
-  <p>Upload Console ("the app") is a personal tool that uploads the operator's own content to the operator's own YouTube channel and Instagram account. No one other than the operator uses this app.</p>
+  <p>Upload Console ("the app") is a personal tool that uploads the operator's own content to the operator's own YouTube channel, Instagram account, and TikTok account. No one other than the operator uses this app.</p>
 
   <h2>2. Information accessed</h2>
   <ul>
     <li><b>YouTube (Google account)</b>: the app uses the video upload scope (<code>youtube.upload</code>) and a read-only scope (<code>youtube.readonly</code>) to display the connected channel name. It stores the OAuth tokens issued by Google for this purpose.</li>
     <li><b>Instagram</b>: the app stores an access token and the account username to publish posts.</li>
+    <li><b>TikTok</b>: the app uses the basic profile scope (<code>user.info.basic</code>) to display the connected account name and the upload scope (<code>video.upload</code>) to send videos to the TikTok app as drafts. It stores the OAuth tokens issued by TikTok for this purpose. Whether and how a draft is posted is decided by the operator in the TikTok app.</li>
   </ul>
 
   <h2>3. How information is used</h2>
@@ -65,10 +67,10 @@
   <p>Tokens and upload records are stored only in the database on the operator's private server and are accessible only to the logged-in operator.</p>
 
   <h2>5. Sharing</h2>
-  <p>No information is sold or shared with third parties. Data is sent only to the official YouTube (Google) and Instagram (Meta) APIs as needed to perform uploads.</p>
+  <p>No information is sold or shared with third parties. Data is sent only to the official YouTube (Google), Instagram (Meta), and TikTok APIs as needed to perform uploads.</p>
 
   <h2>6. Deletion</h2>
-  <p>Selecting "Disconnect" in the admin screen deletes the stored tokens immediately. Google account access can be revoked at any time in <a href="https://myaccount.google.com/permissions">Google Account permissions</a>.</p>
+  <p>Selecting "Disconnect" in the admin screen deletes the stored tokens immediately. Google account access can be revoked at any time in <a href="https://myaccount.google.com/permissions">Google Account permissions</a>, and TikTok access in the TikTok app under Settings → Security → Manage app permissions.</p>
 
   <h2>7. Google API Services User Data Policy</h2>
   <p>The app's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
